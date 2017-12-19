@@ -1,0 +1,434 @@
+@import 'reset.css';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  height: 100vh;
+  border-spacing: 0;
+}
+
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 90%;
+}
+
+h3 {
+  width: 16rem;
+  height: 4rem;
+  border: 2.5px solid white;
+  margin-top: .5rem;
+  padding: 1.5rem 0 0 0;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+h4 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .05rem
+}
+
+td {
+  height: 33.3%;
+  width: 40rem;
+  padding: 0rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.to-flex {
+  display: flex;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.section-1 {
+  height: 100vh;
+  width: 69%;
+}
+
+.section-2 {
+  height: 100vh;
+  width: 39.5%;
+  background-image: url("images/waterfall.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  padding-left: 3rem;
+  background-color: #89b2e3;
+  text-align: left;
+}
+
+.fish, 
+.bird {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(100%);
+  vertical-align: text-bottom;
+}
+
+.elephant {
+  background-color: #232c1a;
+}
+
+
+.wolf {
+  background-color: #008000 ;
+}
+
+.otter {
+  background-color: #8f8c8c;
+}
+
+.penguin {
+  background-color: #d1d3d9;
+}
+
+.tiger {
+  background-color: #89b2e3;
+}
+
+.sloth {
+  background-color: #008000;
+}
+
+.buffalo {
+  background-color: #d1d3d9;
+}
+
+#elephant,
+#wolf,
+#otter,
+#penguin,
+#tiger,
+#sloth,
+#buffalo {
+  filter: invert(100%);
+  width: 35%;  
+  height: 35%;
+}
+
+.bubbles {
+  text-align: right;
+  margin: .5rem;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100%);
+  text-align: right;
+  margin: .3%;
+}
+
+#right-arrow {
+  width: 12%;
+  height: 88%;
+  filter: invert(100%);
+  transform: rotate(180deg);
+  margin-left: 3%;
+}
+
+#left-arrow {
+  width: 12%;
+  height: 88%;
+  filter: invert(100%);
+  position: relative;
+  left: 70%;
+}
+
+#gray {
+  filter: invert(50%);
+  opacity: 0.5;
+}
+
+/*@media screen and (max-width: 1695px) {
+  
+  h1 {
+    font-size: 3.0rem;
+  }
+}*/
+
+@media screen and (max-width: 1550px) {
+ 
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    width: 14rem;
+    height: 3.8rem;
+    border: 2.0px solid white;
+    padding: 1rem 0 .8 0;
+    margin-right: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    width: 13rem;
+    height: 3.5rem;
+    border: 1.5px solid white;
+    margin-right: 1.0rem;
+    font-size: 1.6rem;
+    padding: .5rem 0 0 0;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .4%;
+  }
+
+  #right-arrow {
+    width: 10%;
+  }
+
+  #left-arrow {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h3 {
+    width: 10rem;
+    height: 3.0rem;
+    border: 1.8px solid white;
+    padding: .8rem 0 .7 0;
+    margin: 2rem 1.5rem 0 0;
+    font-size: 1.5rem;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  .fish, 
+  .bird {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    margin: .7rem 0 .7rem 0;
+  }
+  
+  h3 {
+    width: 14rem;
+    height: 3.3rem;
+    border: 2px solid white;
+    padding: 1rem 0 .5rem 0;
+    margin: 2rem 1.5rem 0 0;
+    font-size: 1.8rem;
+  }
+  .to-flex {
+    flex-direction: column-reverse;
+  }
+
+  .section-1 {
+    width: 100%;
+  }
+  
+  .section-2 {
+    width: 100%;
+    background-position: center top;
+  }
+
+  .circle {
+    width: 3rem;
+    height: 3rem;
+    margin: .4%;
+  }
+
+  #gray {
+    filter: invert(60%);
+    opacity: 0.7;
+  }
+
+  #right-arrow {
+    width: 8%;
+  }
+
+  #left-arrow {
+  width: 8%;
+  position: relative;
+  left: 78%;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+   font-size: 1.6rem;
+  }
+
+  h3 {
+    width: 9rem;
+    height: 2.6rem;
+    border: 1.6px solid white;
+    padding: .8rem 0 .7 0;
+    margin-right: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (max-width: 590px) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media screen and (max-width: 485px) {
+
+  h1 {
+    font-size: 2.2rem;
+    padding-left: 6%;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  h5 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .section-1 {
+    width: 100%;
+  }
+
+  .section-2 {
+    width: 100%;
+  }
+
+  #elephant,
+  #wolf,
+  #otter,
+  #penguin,
+  #tiger,
+  #sloth,
+  #buffalo {
+  filter: invert(100%);
+  width: 25%;  
+  height: 25%;
+  margin-top: 2rem;
+}
+
+  tr {
+    width: 100%;
+  }
+
+  td {
+    display: block;
+    vertical-align: middle;
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+    padding: 10% 0;
+  }
+
+  .title {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .circle {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+@media screen and (max-width: 395px) {
+
+    h1 {
+    font-size: 1.7rem;
+    margin-right: 0;
+  }
+
+    h4 {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
